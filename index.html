@@ -16,10 +16,10 @@
     
     <img class="logo" src="./img/logo.jpg" alt="Logo">
             <ul>
-               <li><a href="index.html">Início</a></li>
-               <li><a href="passagens.html">Passagens</a></li>
-               <li><a href="destinos.html">Destinos</a></li>
-               <li><a href="contato.html">Contato</a></li>
+               <li class="header-list"><a href="index.html" class="header-link">Início</a></li>
+               <li class="header-list"><a href="passagens.html" class="header-link">Passagens</a></li>
+               <li class="header-list"><a href="destinos.html" class="header-link">Destinos</a></li>
+               <li class="header-list"><a href="contato.html" class="header-link">Contato</a></li>
             </ul>
 
   </header>
@@ -27,9 +27,41 @@
   <main>
     
     <div id="banner">
-        <img src="img/Recife.jpg" alt="Destino 1">
-        <img src="img/Ibirapuera.jpg" alt="Destino 2">
-        <img src="img/Cristo.jpg" alt="Destino 3">
+        <img class="foto" src="img/Recife.jpg" alt="Destino 1">
+        <img class="foto" src="img/Ibirapuera.jpg" alt="Destino 2">
+        <img class="foto" src="img/Cristo.jpg" alt="Destino 3">
+    </div>
+
+    <div class="products-container">
+
+    <section class="product">
+
+      <img src="https://www.cvc.com.br/imageproc/image/upload/q_70,c_fill,w_200,h_200/v1/CVC/destinos/nacional/RJ/RiodeJaneiro2.jpg" alt="Product Image">
+      <h2>Rio de Janeiro</h2>
+      <p>Pacotes a partir de </p>
+      <p class="price">R$99,99</p>
+      <button class="buy-button">Comprar Agora</button>
+
+    </section>
+    <section class="product">
+
+      <img src="https://www.cvc.com.br/imageproc/image/upload/q_70,c_fill,w_200,h_200/v1/Destinos/nacional/SC/Florianopolis2.jpg" alt="Product Image">
+      <h2>Florianópolis</h2>
+      <p>Pacotes a partir de </p>
+      <p class="price">R$99,99</p>
+      <button class="buy-button">Comprar Agora</button>
+
+    </section>
+    <section class="product">
+
+      <img src="https://www.cvc.com.br/imageproc/image/upload/q_70,c_fill,w_200,h_200/v1/CVC/destinos/nacional/PE/PortoGalinhas2.jpg" alt="Product Image">
+      <h2>Porto de Galinhas</h2>
+      <p>Pacotes a partir de </p>
+      <p class="price">R$99,99</p>
+      <button class="buy-button">Comprar Agora</button>
+
+    </section>
+
     </div>
 
   </main>
@@ -39,20 +71,20 @@
     <div id="footer-content">
 
       <div id="footer-contacts">
-        <h1>Logo</h1>
-        <p>it's all about your dreams</p>
+        <img id="footer-logo" src="img/logo.jpg" alt="Logo">
+        <p>É tudo sobre seus sonhos</p>
 
         <div id="footer-social-media">
 
-          <a href="#" class="footer-link" id="Instagram">
+          <a href="https://www.instagram.com/" class="footer-link" id="instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
 
-          <a href="#" class="footer-link" id="Facebook">
+          <a href="https://www.facebook.com/" class="footer-link" id="facebook">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
 
-          <a href="#" class="footer-link" id="Whatsapp">
+          <a href="https://www.whatsapp.com/" class="footer-link" id="whatsapp">
             <i class="fa-brands fa-whatsapp"></i>
           </a>
 
@@ -62,16 +94,16 @@
 
       <ul class="footer-list">
         <li>
-          <h3>Lugares para Viajar</h3>
+          <h3>Lugares para viajar</h3>
         </li>
         <li>
-          <a href="#" class="footer-link">#</a>
+          <a href="#" class="footer-link">Recife</a>
         </li>
         <li>
-          <a href="#" class="footer-link">#</a>
+          <a href="#" class="footer-link">Rio de Janeiro</a>
         </li>
         <li>
-          <a href="#" class="footer-link">#</a>
+          <a href="#" class="footer-link">Maragogi</a>
         </li>
       </ul>
 
@@ -80,20 +112,35 @@
           <h3>Hospedagens</h3>
         </li>
         <li>
-          <a href="#" class="footer-link">#</a>
+          <a href="#" class="footer-link">App</a>
         </li>
         <li>
-          <a href="#" class="footer-link">#</a>
+          <a href="#" class="footer-link">Desktop</a>
         </li>
         <li>
-          <a href="#" class="footer-link">#</a>
+          <a href="#" class="footer-link">Cloud</a>
         </li>
       </ul>
       
       <div id="footer-subscribe">
-        <h3>Inscreva-se para receber nossoas ofertas exclusivas</h3>
-       </div>
+        <h3>Inscreva-se</h3>
 
+        <p>Adicione seu email para receber ofertas exclusivas</p>
+
+        <div id="input-group">
+          <input type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+
+       </div>
+       
+    </div>
+
+    <div id="footer-copyright">
+      &#169
+      2023 all rights reserved
     </div>
 
   </footer>
