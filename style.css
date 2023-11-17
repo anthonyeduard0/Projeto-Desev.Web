@@ -4,7 +4,12 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow-x: hidden;
     width: 100%;
+    transition: background 0.2s linear;
 }
+body.dark {
+    background: #292c35;
+    color: #fff;
+   } /*coloquei isso  */
 li.header-list{
     display: inline-block;
     margin:  20px;
@@ -201,14 +206,28 @@ section{
     height: 450px;
 }
 .product {
-    max-width: 600px;
+    width: 30%;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex; /*coloquei isso*/
 }
-
+@media (max-width: 600px) {
+    .product {
+      text-align: left;
+    }
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  } /*coloquei isso*/
 .product img {
     max-width: 100%;
     height: auto;
@@ -217,7 +236,7 @@ section{
 
 .price {
     font-size: 1.5em;
-    color: #333;
+    color: #fff;
 }
 
 button.buy-button {
@@ -235,13 +254,67 @@ button.buy-button:hover {
 }
 .products-container {
     display: flex;
-    justify-content: space-around; /* Altere para 'space-between' se desejar espaço entre os produtos */
+    justify-content: space-around; 
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 20px auto; 
 }
 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  } /*coloquei isso*/
 
+
+  
 
 
 
