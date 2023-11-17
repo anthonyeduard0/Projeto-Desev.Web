@@ -27,3 +27,23 @@ chk.addEventListener('change', () => {
   document.body.classList.toggle('dark')
 }) 
 
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    // Adicione ou remova a classe 'dark' em outras seções conforme necessário
+    // Exemplo:
+    // document.getElementById('banner').classList.toggle('dark');
+    // document.getElementById('footer-content').classList.toggle('dark');
+    // ...
+});
+function enviarEmail() {
+    // Obter o valor do campo de e-mail
+    var email = document.getElementById('email').value;
+
+    // Validar o e-mail (você pode adicionar sua lógica de validação aqui)
+
+    // Enviar para algum lugar (por exemplo, exibir no console)
+    console.log('E-mail enviado para: ' + email);
+
+    // Limpar o campo de e-mail, se necessário
+    document.getElementById('email').value = '';
+}
