@@ -200,13 +200,16 @@ section{
     width: 20%;
     height: 450px;
 }
+
 .product {
-    max-width: 600px;
+    min-width: 150px; /* Mudei essas duas linhas aqui*/
+    max-width: 700px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .product img {
