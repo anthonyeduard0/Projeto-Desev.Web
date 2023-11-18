@@ -207,7 +207,7 @@ section{
 }
 
 .product {
-    max-width: 600px;
+    max-width: 700px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
@@ -299,6 +299,33 @@ button.buy-button:hover {
   .fa-sun {
     color: #f39c12;
   } /*coloquei isso*/
+
+/*Página destinos*/
+
+
+main h1{
+    margin-bottom: 15px;
+}
+.cidade{
+    max-width: 700px;
+    margin: 20px 20px 0px 0px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cidade-container{
+    display: inline-flex;
+    
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}    
+
+.cidade img{
+    width: 100%;
+}
 
 
   
