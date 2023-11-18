@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    height: auto;
+    width: 50%;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 28%;
+    background-color: #84c4cc;
+}
+@font-face {
+    font-family: Lato;
+    src: url('assets/Lato-Bold.ttf');
+}
+.logo{
+    height: 200px;
+    width: auto;
+    margin-bottom: 70px;
+}
+.paragraph{
+    font-size: 20px;
+}
+/* Media Query para telas menores */
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin-left: 0;
+    }
+}
