@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <title>Formulário</title>
 </head>
 <body>
-    <form>
-        <div class="contact-form"><label for="Nome"></label></div>
-        <div class="contact-form"><label for="Email"></label></div>
-        <div class="contact-form"><label for="Telefone"></label></div>
-        <div class="contact-form"><label for="Fale conosco"></label></div>
-    </form>
+    <section>
+        <h2>Contato</h2>
+        <form action="file:///C:/Users/DELL/Desktop/Projeto%20Desev.Web/obrigado.html" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="No que podemos ajudar?" required></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="39782207-1093-48c2-82d5-994a6b983ee5">
+            <input type="hidden" name="redirectTo" value="file:///C:/Users/DELL/Desktop/Projeto%20Desev.Web/obrigado.html">
+        </form>
+    </section>
 </body>
 </html>
