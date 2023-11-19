@@ -21,6 +21,7 @@ showImage(currentIndex);
 
 // Auto-rotate banner every 3 seconds
 setInterval(nextImage, 5000);
+
 const chk = document.getElementById('chk')
 
 chk.addEventListener('change', () => {
@@ -47,3 +48,6 @@ function enviarEmail() {
     // Limpar o campo de e-mail, se necessário
     document.getElementById('email').value = '';
 }
+
+
+
