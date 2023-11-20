@@ -54,10 +54,11 @@ img.logo{
 
 main{
     height: auto;
+    
 }
 
 #banner .foto{
-    height: 524px;
+    height: 500px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -306,7 +307,7 @@ button.buy-button:hover {
     justify-content: space-around; 
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto; 
 }
 
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
@@ -361,9 +362,79 @@ button.buy-button:hover {
     color: #f39c12;
 } 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+main{
+    height: auto;
+    column-count: 2;
+    column-gap: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f0ecec;
+}
 
+.footer-image-page {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    object-fit: cover;
+    
+}
 
+.rio-start-page{
+    margin-right: 20px;
+}
 
+h1{
+    font-size: 30px;
+}
 
+h3{
+    font-size: 20px;
+}
+
+p{
+    letter-spacing: 2px;
+}
+
+main{
+    height: 2000px;
+    column-count: 2;
+    column-gap: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f0ecec;
+    
+}
+
+.footer-image-page {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    object-fit: cover;
+    
+}
+
+.rio-start-page{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 25px;
+
+}
+p{
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
 
