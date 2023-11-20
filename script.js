@@ -59,5 +59,5 @@ const toggleModal = () =>{
 }
 
 [openModalButton, closeModalButton, fade].forEach((el) => {
-    el.addEventListener("click", () => console.log("teste"))
-})
+    el.addEventListener("click", () => toggleModal());
+});
