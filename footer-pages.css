@@ -238,11 +238,6 @@ p.footer-paragraph{
     }
 }
 
-section{
-    width: auto;
-    height: 20%;
-}
-
 .product {
     max-width: 700px;
     margin: 20px auto;
@@ -274,12 +269,6 @@ section{
 @font-face {
     font-family: Lato;
     src: url('assets/Lato-Black.ttf');
-}
-
-h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: Lato
 }
 
 p.packets{
@@ -362,79 +351,111 @@ button.buy-button:hover {
     color: #f39c12;
 } 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-main{
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color to the whole page */
+  body {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style the main section */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Style the header section */
+  .rio-start-page {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .rio-start-page h1 {
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .rio-start-page h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .rio-start-page p {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the footer image */
+  .footer-image-page img {
+    width: 100%;
     height: auto;
-    column-count: 2;
-    column-gap: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #f0ecec;
-}
-
-.footer-image-page {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
+  }
+  
+  /* Style the middle section */
+  .rio-mid-page {
     margin-top: 20px;
-    object-fit: cover;
-    
-}
+  }
 
-.rio-start-page{
-    margin-right: 20px;
-}
-
-h1{
-    font-size: 30px;
-}
-
-h3{
-    font-size: 20px;
-}
-
-p{
-    letter-spacing: 2px;
-}
-
-main{
-    height: 2000px;
-    column-count: 2;
-    column-gap: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #f0ecec;
-    
-}
-
-.footer-image-page {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 20px;
-    object-fit: cover;
-    
-}
-
-.rio-start-page{
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-
-h1{
-    font-size: 30px;
+  .rio-mid-page h1 {
+    font-size: 35px;
+    text-align: center;
     margin-bottom: 20px;
-}
-
-h3{
-    font-size: 20px;
-    margin-bottom: 25px;
-
-}
-p{
-    letter-spacing: 2px;
+  }
+  
+  .recomendations {
     margin-bottom: 20px;
-}
+  }
+  
+  .recomendations h2 {
+    color: #333;
+  }
+  
+  .recomendations p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Style the "Em fevereiro, tem Carnaval" section */
+  section:last-child {
+    margin-top: 20px;
+  }
+  
+  section:last-child h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  section:last-child p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Style the party image */
+  .party-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .emphasis h1{
+    align-items: center;
+  }
+  .rio-start-page a {
+    text-decoration: none;
+  }
+  
+
 
