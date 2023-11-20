@@ -25,6 +25,7 @@ header{
     align-items: center;
     background-color: #24849b;
     height: auto;
+    
 }
 
 @media screen and (max-width: 768px) {
