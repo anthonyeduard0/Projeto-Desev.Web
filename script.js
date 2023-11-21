@@ -35,17 +35,29 @@ chk.addEventListener('change', () => {
     // document.getElementById('footer-content').classList.toggle('dark');
     // ...
 });
+
 function enviarEmail() {
-    // Obter o valor do campo de e-mail
+    // Obtém o valor do campo de e-mail
     var email = document.getElementById('email').value;
 
-    // Validar o e-mail (você pode adicionar sua lógica de validação aqui)
+    // Verifica se o e-mail é válido (pode adicionar mais validações se necessário)
+    if (isValidEmail(email)) {
+        // Limpa o campo de e-mail
+        document.getElementById('email').value = '';
 
-    // Enviar para algum lugar (por exemplo, exibir no console)
-    console.log('E-mail enviado para: ' + email);
+        // Aqui você pode adicionar lógica para enviar o e-mail ou realizar outras ações
+        console.log('E-mail enviado com sucesso:', email);
+    } else {
+        // Exibe uma mensagem de erro ou realiza outra ação, se o e-mail não for válido
+        alert('Por favor, insira um endereço de e-mail válido.');
+    }
+}
 
-    // Limpar o campo de e-mail, se necessário
-    document.getElementById('email').value = '';
+function isValidEmail(email) {
+    // Adicione aqui a lógica de validação do e-mail (pode ser uma expressão regular, etc.)
+    // Este é um exemplo simples que verifica se o e-mail possui um formato básico
+    var emailRegex = /\S+@\S+\.\S+/;
+    return emailRegex.test(email);
 }
 
 // Parte do Modal//
