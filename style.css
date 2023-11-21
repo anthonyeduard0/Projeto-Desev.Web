@@ -6,6 +6,50 @@ body{
     width: 100%;
     transition: background 0.2s linear;
 }
+input[type="checkbox"]{
+    display: none;
+}
+.bi{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.bi-moon{
+    display: none;
+}
+/*Dark theme*/
+.dark,
+.dark header,
+.dark .modal-body,
+.dark .modal-header,
+.dark #modal{
+    background-color: #263238;
+    color: #FFF;
+}
+.dark,
+.dark header,
+.dark .modal-bodyf,
+.dark .modal-headerf,
+.dark #modalf{
+    background-color: #263238;
+    color: #FFF;
+}
+
+.dark,
+.dark header,
+.dark .modal-bodyp,
+.dark .modal-headerp,
+.dark #modalp{
+    background-color: #263238;
+    color: #FFF;
+}
+
+.dark .bi-sun{
+    display: none;
+}
+.dark .bi-moon{
+    display: block;
+}
+/*Dark theme*/
 /*Parte do Modal*/
 button{
     padding: .6rem 1.2rem;
@@ -163,10 +207,7 @@ button:hover{
 }
 /*Modal Porto de Galinhas*/
 /*Parte do modal*/
-body.dark {
-    background: #292c35;
-    color: #fff;
-   } 
+
 
 li.header-list{
     display: inline-block;
@@ -476,50 +517,6 @@ button.buy-button:hover {
   border: 0;
   box-sizing: border-box;
 }
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-  }
-
-  .label {
-    background-color: #111;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    padding: 5px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-    transform: scale(1.5);
-  }
-
-  .label .ball {
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
-  }
-
-  .checkbox:checked + .label .ball {
-    transform: translateX(24px);
-  }
-
-  .fa-moon {
-    color: #f1c40f;
-  }
-
-  .fa-sun {
-    color: #f39c12;
-  } /*coloquei isso*/
 
 
 

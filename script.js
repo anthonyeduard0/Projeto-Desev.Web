@@ -21,20 +21,22 @@ showImage(currentIndex);
 
 // Auto-rotate banner every 3 seconds
 setInterval(nextImage, 3000);
-const chk = document.getElementById('chk')
+/*Dark mode*/
+const changeThemeBtn = document.querySelector("#change-theme");
 
-chk.addEventListener('change', () => {
-  document.body.classList.toggle('dark')
-}) 
+changeThemeBtn.addEventListener("change", function() {
+    document.body.classList.toggle("dark");
 
-chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
+});
+/*Dark mode*/
+
+
     // Adicione ou remova a classe 'dark' em outras seções conforme necessário
     // Exemplo:
     // document.getElementById('banner').classList.toggle('dark');
     // document.getElementById('footer-content').classList.toggle('dark');
     // ...
-});
+
 function enviarEmail() {
     // Obter o valor do campo de e-mail
     var email = document.getElementById('email').value;
