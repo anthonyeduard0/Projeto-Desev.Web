@@ -73,3 +73,30 @@ const toggleModal = () =>{
 [openModalButton, closeModalButton, fade].forEach((el) => {
     el.addEventListener("click", () => toggleModal());
 });
+
+//Modal Florianopolis
+const openModalButtonf = document.querySelector("#open-modalf");
+const closeModalButtonf = document.querySelector("#close-modalf");
+const modalf = document.querySelector("#modalf");
+const fadef = document.querySelector("#fadef");
+const toggleModalf = () =>{
+    modalf.classList.toggle("hidef");
+    fadef.classList.toggle("hidef");
+}
+
+[openModalButtonf, closeModalButtonf, fadef].forEach((el) => {
+    el.addEventListener("click", () => toggleModalf());
+});
+//Modal Porto de Galinhas
+const openModalButtonp = document.querySelector("#open-modalp");
+const closeModalButtonp = document.querySelector("#close-modalp");
+const modalp = document.querySelector("#modalp");
+const fadep = document.querySelector("#fadep");
+const toggleModalp = () =>{
+    modalp.classList.toggle("hidep");
+    fadep.classList.toggle("hidep");
+}
+
+[openModalButtonp, closeModalButtonp, fadep].forEach((el) => {
+    el.addEventListener("click", () => toggleModalp());
+});
