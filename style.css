@@ -529,6 +529,44 @@ button.buy-button:hover {
     color: #f39c12;
   } /*coloquei isso*/
 
+#tickets li{
+    border: 5px solid #171717;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+}
+
+#tickets li.gol{
+    background: linear-gradient(orange, #FAAC58);
+}
+
+#tickets li.azul{
+    background: linear-gradient(blue, lightblue ) ;
+}
+
+#tickets ul{
+    font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+}
+
+#tickets img{
+    height: 100px;
+    width: auto;
+}
+
+#tickets .price-tickets{
+    background-color: #7f37c9;
+    color: #FFF;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+}
+
+#tickets p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+    font-size: large;
+}
+
 
 
 
