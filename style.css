@@ -66,7 +66,102 @@ button:hover{
 #modal.hide{
     top: 0;
 }
+/*Modal florianópolis*/
+#fadef,#modalf{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
 
+#fadef{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+}
+#modalf{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: white;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem;
+}
+.modal-headerf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.modal-bodyf p{
+    margin-bottom: 1rem;
+}
+#modalf.hidef,
+#fadef.hidef{
+    opacity: 0;
+    pointer-events: none;
+}
+#modalf.hidef{
+    top: 0;
+}
+
+/*Modal Florianópolis*/
+
+/*Modal Porto de Galinhas*/
+#fadep,#modalp{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fadep{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+}
+#modalp{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: white;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: .5rem;
+}
+.modal-headerp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.modal-bodyp p{
+    margin-bottom: 1rem;
+}
+#modalp.hidep,
+#fadep.hidep{
+    opacity: 0;
+    pointer-events: none;
+}
+#modalp.hidep{
+    top: 0;
+}
+/*Modal Porto de Galinhas*/
 /*Parte do modal*/
 body.dark {
     background: #292c35;
